@@ -1,0 +1,555 @@
+/* this syntax for all page */
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width:100vw;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    /* no underline below the name */
+}
+button{
+    background-color: aqua;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: rgb(19, 8, 8);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .logo
+{
+    font-weight: 700;
+    font-size: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+}
+nav ul li:hover
+{
+    text-decoration: underline;
+    font-weight: 900;
+}
+.search{
+
+    display: flex;
+    gap: 30px;
+}
+input{
+    padding: 4px 10px;
+}
+.hero-section{
+    display: flex;
+    align-items: center;
+    
+
+}
+.hero-left-section{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(18, 211, 237);
+}
+.hero-left-section h1 span{
+    color: rgb(249, 80, 7);
+    font-weight: 900;
+    font-size: 2.5 rem;
+}
+.hero-left-section p span{
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(59, 12, 226);
+
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    /* gap: 30px; */
+}
+.bhero{
+    display: flex;
+    gap: 30px;
+    border: 1px solid rgb(15, 14, 14);
+    border-radius: 3px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content:space-around;
+}
+footer p
+{
+    font-weight: 600;
+}
+/*footer(parent) and ul is child  */
+footer ul 
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.hero-left-section{
+    position:absolute;
+    top: 380px;
+    right: 0px;
+    color: rgba(252, 249, 255, 0.914);
+}
+.hero{
+    position: absolute;
+    right:100px;
+    bottom: 100px;
+}
+.logo
+{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    height:30px;
+    width: 130px;
+    color: rgb(59, 13, 245);
+    background-color: aqua;
+
+}
+/* tag is parent and li is child */
+.tag
+{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+.search
+{
+    position:absolute;
+    top: 20px;
+    left: 1100px;
+}
+.b{
+    height: 50px;
+
+}
+.bu{
+    width: 700px;
+}
+footer ul
+{
+    position: absolute;
+    left:1600px;
+}
+.l{
+
+    background-image: none;
+    height: 1800px;
+    width:2000px;
+}
+.logo
+{
+        width: 130px;
+        height: 30px;
+        /* background-color: aqua; */
+        position:absolute;
+        border: 80%;
+        animation-name:colorchange;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        /* OR */
+        /* animation: colorchange 10s infinite; */
+        /* left: 200px; */
+}
+@keyframes colorchange{
+    0%{
+        background-color:red;
+    }
+    25%{
+        background-color:rgb(23, 215, 122);
+    }
+    50%
+    {
+        background-color:yellow;
+    }
+    75%
+    {
+        background-color:brown;
+    }
+    100%
+    {
+        background-color: blueviolet;
+    }
+}
+.nov{
+    background-color: aqua;
+    position: absolute;
+    animation-name: newanimation;
+}
+.new1
+{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 300px;
+    left: 450px;
+}
+.new1:hover{
+    animation-name: new11;
+    animation-duration:5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes new11{
+    0%{
+        border:solid red;
+    }
+    25%{
+        border: solid yellow;
+    }
+    50%
+    {
+        border: solid blue;
+    }
+    75%
+    {
+        border:solid orchid;
+    }
+    100%
+    {
+        background-color: blueviolet;
+    }
+}
+.new2
+{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 300px;
+    left: 650px;
+}
+.new2:hover{
+    animation-name: new12;
+    animation-duration:5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes new12{
+    0%{
+        border:solid red;
+    }
+    25%{
+        border: solid yellow;
+    }
+    50%
+    {
+        border: solid blue;
+    }
+    75%
+    {
+        border:solid orchid;
+    }
+    100%
+    {
+        background-color: blueviolet;
+    }
+}
+.new3
+{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 300px;
+    left: 850px;
+}
+.new3:hover{
+    animation-name: new13;
+    animation-duration:5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes new13{
+    0%{
+        border:solid red;
+    }
+    25%{
+        border: solid yellow;
+    }
+    50%
+    {
+        border: solid blue;
+    }
+    75%
+    {
+        border:solid orchid;
+    }
+    100%
+    {
+        background-color: blueviolet;
+    }
+}
+.new4
+{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 300px;
+    left: 1050px;
+}
+.new4:hover{
+    animation-name: new14;
+    animation-duration:5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes new14{
+    0%{
+        border:solid red;
+    }
+    25%{
+        border: solid yellow;
+    }
+    50%
+    {
+        border: solid blue;
+    }
+    75%
+    {
+        border:solid orchid;
+    }
+    100%
+    {
+        background-color: blueviolet;
+    }
+}
+.new5
+{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 300px;
+    left: 1250px;
+}
+.new5:hover{
+    animation-name: new15;
+    animation-duration:5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes new15{
+    0%{
+        border:solid red;
+    }
+    25%{
+        border: solid yellow;
+    }
+    50%
+    {
+        border: solid blue;
+    }
+    75%
+    {
+        border:solid orchid;
+    }
+    100%
+    {
+        background-color: blueviolet;
+    }
+}
+/* .sj
+{
+    position: absolute;
+    top:500px;
+    left: 440px;
+    font-size: 0.5cm;
+} */
+.pk
+{
+    position: absolute;
+    top:500px;
+    left:640px;
+    font-size: .5cm;
+}
+.pk2
+{
+    position: absolute;
+    top: 500px;
+    left:840px;
+    font-size: .5cm;
+}
+.bk
+{
+    position: absolute;
+    top:500px;
+    left:1040px;
+    font-size: .5cm;
+}
+.ak
+{
+    position: absolute;
+    top:500px;
+    left: 1240px;
+    font-size: .5cm;
+}
+.para
+{
+    position: absolute;
+    top:200px;
+    left: 800px;
+    color: rgb(255, 179, 0);
+    animation-name: para1;
+    animation-duration:5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes para1
+{
+    0%
+    {
+        color: black;
+    }
+    25%
+    {
+        color:brown
+    }
+    50%
+    {
+        color:cyan
+    }
+    75%
+    {
+        color:deeppink
+    }
+}
+.con
+{
+    position: absolute;
+    top:850px;
+    left:880px;
+    font-size: 0.5cm;
+}
+.lista
+{
+    position: absolute;
+    top: 900px;
+    left:820px;
+}
+body
+{
+    background-image: linear-gradient(yellow,white);
+}
+.story
+{
+    position: absolute;
+    top:560px;
+    left: 60px;
+    background-color: aqua;
+}
+h1{
+    background-color: aqua;
+}
+.det1
+{
+    position: absolute;
+    top:520px;
+    left: 470px;
+    font-size: 0.5cm;
+    height: 200px;
+    width: 200px;
+}
+.det1 >p
+{
+    background-color: aqua;
+    border: 1px solid black;
+}
+.det2
+{
+    position: absolute;
+    top:520px;
+    left: 670px;
+    font-size: 0.5cm;
+    height: 200px;
+    width: 200px;
+}
+.det2 >p
+{
+    background-color: aqua;
+    border: 1px solid black;
+}
+.det3
+{
+    position: absolute;
+    top:520px;
+    left: 870px;
+    font-size: 0.5cm;
+    height: 200px;
+    width: 200px;
+}
+.det3 >p
+{
+    background-color: aqua;
+    border: 1px solid black;
+}
+.det4
+{
+    position: absolute;
+    top:520px;
+    left: 1070px;
+    font-size: 0.5cm;
+    height: 200px;
+    width: 200px;
+}
+.det4 >p
+{
+    background-color: aqua;
+    border: 1px solid black;
+}
+.det5
+{
+    position: absolute;
+    top:520px;
+    left: 1270px;
+    font-size: 0.5cm;
+    height: 200px;
+    width: 200px;
+}
+.det5 >p
+{
+    background-color: aqua;
+    border: 1px solid black;
+}
